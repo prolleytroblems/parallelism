@@ -3,7 +3,7 @@ import time
 
 
 def func(arg):
-    print(arg)
+
     ip = list(arg.keys())[0]
     arg = arg[ip]
     assert arg==1 or arg==0
@@ -23,4 +23,6 @@ bouncer.callback=func
 
 print(app)
 
-bouncer.start(['192.168.12.30'], 1, 5)
+
+#bouncer.start(['192.168.12.30'],{'192.168.12.30': 1}, 5)
+bouncer.start(['192.168.11.34'], {'192.168.11.34': 1}, 5)

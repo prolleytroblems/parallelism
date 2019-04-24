@@ -3,7 +3,6 @@ import time
 
 
 def func(arg):
-    print(arg)
     ip = list(arg.keys())[0]
     arg = arg[ip]
     assert arg==1 or arg==0
